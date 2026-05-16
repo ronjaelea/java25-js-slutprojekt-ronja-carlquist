@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./main.js" type="module"></script>
     <title>Ronja's Movie Database</title>
 </head>
@@ -12,30 +12,33 @@
     <header>
         <nav></nav>
     </header>
+    <main>
+        <section> <!-- SEARCH FORM -->
+            <form class="search-form"  method="get">
+                <label for="query"></label>
+                <input type="text" name="query" id="search-query">
 
-
-    <section> <!-- SEARCH FORM -->
-        <form class="search-form"  method="get">
-            <label for="query"></label>
-            <input type="text" name="query" id="search-query">
-
-            <label for="sort"></label>
-            <select name="sort" id="sort-select"></select>
-            
-            <button>Sök</button>
-        </form>
-    </section>
-    
-    <section>
-        <!-- POPULAR -->
-        <div id="popular-list" class="card-grid"></div>
-    </section>
-    
-    <section>
-        <!-- TOP RATED -->
-        <div id="top-rated-list" class="card-grid"></div>
-    </section>
-
+                <label for="sort"></label>
+                <select name="sort" id="sort-select"></select>
+                
+                <button>Sök</button>
+            </form>
+        </section>
+        
+        <section>
+            <!-- POPULAR -->
+            <div id="popular-list" class="card-grid">
+                <!-- js: div, card -->
+            </div>
+        </section>
+        
+        <section>
+            <!-- TOP RATED -->
+            <div id="top-rated-list" class="card-grid">
+                <!-- js: div, card -->
+            </div>
+        </section>
+    </main>
 
     <footer></footer>
 </body>
