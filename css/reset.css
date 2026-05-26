@@ -17,6 +17,11 @@ ol, ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 img {
   max-width: 100%;
   height: auto;

@@ -1,11 +1,5 @@
 import { getPopularMovies, getTopRatedMovies } from "./js/api.js";
-import { createMovieCard, renderCards } from "./js/render.js";
-
-
-
-// console.log(getPopularMovies());
-
-
+import { renderCards } from "./js/render.js";
 
 
 const init = async () => {
@@ -16,4 +10,3 @@ const init = async () => {
 }
 
 init();
-    

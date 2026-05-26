@@ -1,0 +1,30 @@
+.result {
+    margin: 3em 0;
+}
+
+    .result h3 {
+        color: grey;
+    }
+    
+    .result-contents {
+        height: 400px;
+        padding: 1em 0;
+        display: flex;
+        gap: 2em;
+    }
+
+        .result-contents img {
+            box-shadow: 2px 2px 20px 2px lightgrey;
+        }
+        
+        .result-info {
+            min-width: 250px;
+            max-width: 450px;
+            overflow-y: scroll;
+            text-align: justify;
+            padding: 1em 0;
+            display: flex;
+            gap: 1em;
+            flex-direction: column;
+            justify-content: space-between;
+        }

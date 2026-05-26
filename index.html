@@ -10,32 +10,48 @@
 </head>
 <body>
     <header>
-        <nav></nav>
+        <div class="logo-container">
+            <a href="./index.html">
+                <img src="./resources/logo.png" alt="RMDB">
+            </a>
+        </div>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./html/searchresults.html">Search</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section> <!-- SEARCH FORM -->
-            <form class="search-form"  method="get">
-                <label for="query"></label>
-                <input type="text" name="query" id="search-query">
-
-                <label for="sort"></label>
-                <select name="sort" id="sort-select"></select>
-                
-                <button>Sök</button>
+        <section>
+            <form class="search-form" action="./html/searchresults.html" method="get">
+                <div>
+                    <input type="radio" name="category" id="movies" value="movies" checked="true">
+                    <label for="movies">Movies</label>
+                    <input type="radio" name="category" id="persons" value="persons">
+                    <label for="persons">Persons</label>
+                </div>
+                <div>
+                    <input type="text" name="query" id="search-query" placeholder="Search…" required>
+                    <select name="sort" id="sort-select">
+                        <option value="">Sort by…</option>
+                        <option value="az">A–Z</option>
+                        <option value="za">Z–A</option>
+                        <option value="pop-high">Rating (high–low)</option>
+                        <option value="pop-low">Rating (low–high)</option>
+                    </select>
+                    <button>Search</button>
+                </div>
             </form>
         </section>
-        
         <section>
-            <!-- POPULAR -->
-            <div id="popular-list" class="card-grid">
-                <!-- js: div, card -->
+             <h1>Popular Movies</h1>
+             <div id="popular-list" class="card-grid">
             </div>
         </section>
-        
         <section>
-            <!-- TOP RATED -->
+            <h1>Top Rated Movies</h1>
             <div id="top-rated-list" class="card-grid">
-                <!-- js: div, card -->
             </div>
         </section>
     </main>
